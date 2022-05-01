@@ -39,7 +39,7 @@ public class Ex8 {
 	public static void main(String[] args) {
 		Ex8 T = new Ex8();
 		Scanner sc = new Scanner(System.in);
-		String sentence = sc.next();
+		String sentence = sc.next();		//일단 라인을 가져와야했다.
 		System.out.println(T.solution(sentence));
 	}
 
