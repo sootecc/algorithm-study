@@ -6,6 +6,11 @@ public class Ex7 {
 
 	public String solution(String str) {
 		String answer="";
+		String tmp = new StringBuilder(str).reverse().toString();
+		if(str.equalsIgnoreCase(tmp)) answer = "YES";
+
+		/*
+		 String answer = "YES";
 		str = str.toUpperCase();
 		char[] tmp = str.toCharArray();
 		answer = "YES";
@@ -19,6 +24,7 @@ public class Ex7 {
 				return answer;
 			}
 		}
+		*/
 		return answer;
 		
 	}
