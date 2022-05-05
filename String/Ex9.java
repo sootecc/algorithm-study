@@ -1,5 +1,6 @@
 package String;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Ex9 {
@@ -8,19 +9,24 @@ public class Ex9 {
 		
 		String answer = "";
 		char[] tmp = str.toCharArray();
-		
+		ArrayList<Character> c = new ArrayList<Character>();
 		
 		
 		for(int i=0;i<tmp.length;i++) {
 			if(Character.isDigit(tmp[i])) {
-				answer += tmp[i];
+				c.add(tmp[i]);
 			}
 		}
 		
-		for(int i=0;i<answer.length();i++) {
-			if(answer.charAt(i)!=0)
-				answer +=	// answer에 0 뺀 값을 넣어야 함
+		while(c.get(0)=='0') {
+			c.remove(0);
 		}
+		
+		for(int i =0; i<c.size();i++) {
+			answer += c.get(i);
+		}
+		
+		
 			
 		return answer;
 		
