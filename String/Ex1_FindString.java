@@ -2,7 +2,7 @@ package String;
 
 import java.util.Scanner;
 
-public class Ex01_FindString {
+public class Ex1_FindString {
 	 
 	public static void main(String[] args){
 	    Scanner in=new Scanner(System.in);
