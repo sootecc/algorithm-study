@@ -2,7 +2,7 @@ package String;
 
 import java.util.Scanner;
 
-public class Ex2_Change_ULcase {
+public class Ex02_Change_ULcase {
 	
 	public  String solution(String str) {
 		
@@ -25,7 +25,7 @@ public class Ex2_Change_ULcase {
 	}
 	
 	public static void main(String[] args) {
-		Ex2_Change_ULcase T = new Ex2_Change_ULcase();
+		Ex02_Change_ULcase T = new Ex02_Change_ULcase();
 		Scanner kb=new Scanner(System.in);
 	    String str = kb.next();
 	    System.out.println(T.solution(str));
