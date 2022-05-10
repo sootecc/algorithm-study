@@ -11,18 +11,21 @@ public class Ex12 {
 		int[] sub = new int[7];
 		String[] result = new String[count]; 
 		String[] result2 = new String[count];
+		char[] character = new char[count]; 
 		//substring ÀÌ¿כ
 		for(int i = 0 ; i< count;i++) {
 			result[i] = str.substring(7*i,7*i+7);
-			System.out.println(result[i]);
+			
 		}
 		for(int i = 0 ; i< count ; i++) {
-			for(int j= 0 ;j<count ; j++) {
+			for(int j= 0 ;j<result[i].length() ; j++) {
 				if(result[i].charAt(j) == '#') 
 					result2[i]+= 1;
-				else(result[i].charAt(j) == '*')
+				else {
 					result2[i] += 0;
+				}
 			}
+			  System.out.println(Integer.parseInt(result2[i]));
 		}
 		
 		
