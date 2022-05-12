@@ -10,11 +10,21 @@ public class Ex05 {
 	public int solution(int count) {
 		int answer = 0;
 		
-		//count까지의 소수 개수
-		for(int i= 2; i<count ; i++) {
-			if(!(count % i == 0)) {
-					
+		if(count==2) {
+			answer = 1;
+		}else {
+			answer ++;
+		}
+		for(int i= 3; i<count ; i++) {
+			for(int j = 2 ;j<i;j++ ) {
+				if(i%j==0) {
+					break;
+				}else if((j == i-1) &&(i%j!=0))
+					answer ++;
+				
+				
 			}
+				
 		}
 		
 		
